@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="Cint.Test.RobotCleaner/Cint.Test.RobotCleaner.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Cint.Test.RobotCleaner/Robot.cs">
+    <Files>
+      <File FileName="Cint.Test.RobotCleaner/Robot.cs" Line="34" Column="34" />
+    </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
