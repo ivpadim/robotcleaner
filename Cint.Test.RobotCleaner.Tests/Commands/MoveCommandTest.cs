@@ -11,7 +11,7 @@ namespace Cint.Test.RobotCleaner.Tests
 		[SetUp]
 		public void SetUp ()
 		{
-			robot = new Robot (new Office (), null);
+			robot = new Robot (new Office (), null, null);
 			robot.Position = new Position (1, 1);
 		}
 
@@ -23,8 +23,8 @@ namespace Cint.Test.RobotCleaner.Tests
 			Assert.Throws<FormatException> (() => new MoveCommand ("N X"));
 			Assert.Throws<ArgumentOutOfRangeException> (() => new MoveCommand ("X 1"));
 			Assert.Throws<ArgumentOutOfRangeException> (() => new MoveCommand ("1 1"));
-			Assert.Throws<ArgumentOutOfRangeException> (() => new MoveCommand ("N -100001"));
-			Assert.Throws<ArgumentOutOfRangeException> (() => new MoveCommand ("N 100001"));
+			Assert.Throws<ArgumentOutOfRangeException> (() => new MoveCommand ("N 0"));
+			Assert.Throws<ArgumentOutOfRangeException> (() => new MoveCommand ("N 100000"));
 		}
 
 		[Test]
@@ -73,7 +73,7 @@ namespace Cint.Test.RobotCleaner.Tests
 		[ExpectedException (typeof(InvalidOperationException))]
 		public void CannotMoveIfPositionIsNotSet ()
 		{
-			robot = new Robot (new Office (), null);
+			robot = new Robot (new Office (), null, null);
 			MoveNorth ();
 		}
 

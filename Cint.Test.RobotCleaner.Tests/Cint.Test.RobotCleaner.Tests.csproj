@@ -48,6 +48,7 @@
     <Compile Include="PositionTest.cs" />
     <Compile Include="RobotTest.cs" />
     <Compile Include="Helpers\TestWriter.cs" />
+    <Compile Include="RobotFactoryTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Cint.Test.RobotCleaner\Cint.Test.RobotCleaner.csproj">

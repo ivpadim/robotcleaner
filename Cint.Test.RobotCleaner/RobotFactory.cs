@@ -10,12 +10,15 @@ namespace Cint.Test.RobotCleaner
 			var number = int.Parse (console.ReadLine ());
 			var commands = CreateCommands (console, number);
 			var office = new Office ();
-			var robot = new Robot (office, commands);
+			var robot = new Robot (office, commands, console);
 			return robot;
 		}
 
 		public static IEnumerable<ICommand> CreateCommands (IConsole console, int number)
 		{
+			if (number <= 0 || number > 10000)
+				throw new ArgumentOutOfRangeException ("number");
+
 			var commands = new List<ICommand> ();
 
 			var position = new PositionCommand (console.ReadLine ());

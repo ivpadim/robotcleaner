@@ -23,7 +23,7 @@ namespace Cint.Test.RobotCleaner
 			if (!cardinalDirections.Contains (cardinalDirection))
 				throw new ArgumentOutOfRangeException ("direction");
 
-			if (steps < 0 || steps > Position.MaxValue)
+			if (steps <= 0 || steps >= Position.MaxValue)
 				throw new ArgumentOutOfRangeException ("steps");
 		}
 

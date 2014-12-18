@@ -10,7 +10,7 @@ namespace Cint.Test.RobotCleaner
 
 			var robot = RobotFactory.CreateRobot (console);
 			robot.Clean ();
-			robot.PrintOutput(console);
+			robot.PrintReport();
 			Console.ReadLine ();
 		}
 	}

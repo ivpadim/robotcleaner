@@ -18,7 +18,7 @@ namespace Cint.Test.RobotCleaner.Tests
 		[Test]
 		public void ShouldMoveToInitialPosition()
 		{
-			var robot = new Robot (new Office (), null);
+			var robot = new Robot (new Office (), null, null);
 			var command = new PositionCommand ("1 1");
 			command.Execute (robot);
 

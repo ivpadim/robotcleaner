@@ -19,10 +19,11 @@ namespace Cint.Test.RobotCleaner.Tests
 				new PositionCommand ("10 22"),
 				new MoveCommand ("N 2"),
 				new MoveCommand ("E 1")
-			});
+			},
+			output);
 
 			robot.Clean ();
-			robot.PrintOutput (output);
+			robot.PrintReport ();
 		}
 
 		[SetUp]
